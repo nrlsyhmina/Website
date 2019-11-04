@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>SYJ Store</title>
+            <meta nama="viewport" content="width=device-width,initial-scale=1">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+            <script src="function.js"></script>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            <link href="css/style.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <!--Navbar-->
+        <table id="header">
+            <tr>
+                <td style="padding-left: 20px">
+                    <a href="home-page.html"><img src="src/logo.png" width="100px"></a>
+                </td>
+                <td>
+                        <ul>
+                                <li><a href="home-page.html">Home</a></li>
+                                <li><a href="about-us.html">About Us</a></li>
+                                <li><a href="our-product.html">Our Products</a></li>
+                                <li><a href="contact-us.html">Contact Us</a></li>
+                                <li><table class="container">
+                                    <button type="button" class="button-white fa fa-shopping-cart" data-toggle="collapse" data-target="#demo">&nbsp;(<span class="total-count"></span>)</button>
+                                            <table id="demo" class="collapse">
+                                                    <tr>
+                                                        <td class="show-cart table"></td>
+                                                        <tr><td>
+                                                            <p>Total Price: </p><p class="total-cart"></p>
+                                                        </td></tr>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                                <a href="checkout.html" class="button-yellow" style="padding: 10px;">Checkout</a>
+                                                        </td>
+                                                        
+                                                    </tr>
+                                            </table>
+                                        </table>
+                                </li>
+                            </ul>
+                </td>
+            </tr>
+        </table>
+
+        
+
+        <table>
+                <tr>
+                    <img src="src/innerbanner.png" width="100%" >
+                </tr>
+        </table>
+
+        <table width="100%">
+            <tr>
+                <td><h1  style="text-align: center; font-family: Playlist Script;margin-top: 50px;">Checkout</h1></td>
+            </tr>
+        </table>
+
+        <!--Cart-->
+        <table style="border: 1px #ccc solid;" height="400px" width="100%">
+                <tr>
+                        <td><h1  style="padding: 30px;margin-top: 50px;">Cart</h1></td>
+                    </tr>
+                <tr>
+                    <td style="text-align: center; padding: 30px;" class="show-cart"></td>
+                </tr>
+                <tr>
+                    <td style="padding: 30px;"><p><strong>Total Price: </strong></p><p class="total-cart"></p></td>
+                </tr>
+            </table>
+
+        <!-- Form Billing-->
+		<table style="background-color: whitesmoke;" width="100%">
+            <tr><td style="padding: 30px;">Accepted Cards</td></tr>
+            <tr>
+                <td style="padding-left: 30px;">
+                        <i class="fa fa-cc-visa" style="color:navy;"></i>
+                        <i class="fa fa-cc-amex" style="color:blue;"></i>
+                        <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                        <i class="fa fa-cc-discover" style="color:orange;"></i>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 30px;">
+                    <label>Name On Card: </label><br>
+                    <input type="text" id="cname" name="cardname" placeholder="Eg: Nurul Syahmina" class="checkout">
+                </td>
+            </tr>
+            <tr>
+                    <td style="padding: 30px;">
+                        <label>Credit Card Number: </label><br>
+                        <input type="text" id="cnum" name="cardnum" placeholder="Eg: 6666-2222-3333-1111" class="checkout">
+                    </td>
+            </tr>
+            <tr>
+                    <td style="padding: 30px;">
+                        <label>Expire Month: </label><br>
+                        <input type="text" id="expmonth" name="expmonth" placeholder="Eg: November" class="checkout">
+                    </td>
+            </tr>
+            <tr>
+                    <td style="padding: 30px;">
+                        <label>CVV: </label><br>
+                        <input type="text" id="cvv" name="cvv" placeholder="Eg: 654" class="checkout">
+                    </td>
+            </tr>
+            <tr><td style="padding-left: 30px;"><h2>Billing Address</h2></td></tr>
+            <tr>
+                    <td style="padding: 30px;">
+                        <label><i class="fa fa-user"></i> Full Name: </label><br>
+                        <input type="text" id="name" name="name" placeholder="Eg: Nurul Syahmina" class="checkout">
+                    </td>
+            </tr>
+            <tr>
+                    <td style="padding: 30px;">
+                        <label><i class="fa fa-envelope"></i> Email: </label><br>
+                        <input type="email" id="email" name="email" placeholder="Eg: syjstore@gmail.com" class="checkout">
+                    </td>
+            </tr>
+            <tr>
+                    <td style="padding: 30px;">
+                        <label><i class="fa fa-address-card-o"></i> Address: </label><br>
+                        <input type="text" id="address" name="address" placeholder="Eg: UiTM Cawangan Pahang Kampus Raub,27600 Raub District, Pahang" class="checkout">
+                    </td>
+            </tr>
+            <tr>
+                    <td style="padding: 30px;">
+                        <label><i class="fa fa-institution"></i> City: </label><br>
+                        <input type="text" id="city" name="city" placeholder="Eg: Raub" class="checkout">
+                    </td>
+            </tr>
+            <tr>
+                    <td style="padding: 30px;">
+                        <label> Zip: </label><br>
+                        <input type="text" id="zip" name="zip" placeholder="Eg: 27600" class="checkout">
+                    </td>
+            </tr>
+            <tr>
+                    <td style="padding: 30px;">
+                        <label> State: </label><br>
+                        <input type="text" id="state" name="state" placeholder="Eg: Pahang" class="checkout">
+                    </td>
+            </tr>
+            <tr>
+                <td style="padding-left: 30px;">
+                    <input type="submit" value="Continue To Checkout" class="button-yellow">
+                </td>
+            </tr>
+         </table>
+
+    <!--Shop Now-->
+    <table style="border: 1px black transparent;" height="400px" width="100%">
+        <tr>
+            <td style="text-align: center; padding: 30px; background-image: url(src/starry-sky.jpg)">
+                <h1 style="color: #ecc717;">50% OFF FRAME</h1><br>
+                <a href="our-product.html" class="button-yellow" style="padding: 10px;">SHOP NOW</a>
+
+            </td>
+        </tr>
+    </table>
+
+         <!--Footer-->
+ <table class="footer" style="padding: 30px 30px 30px 30px;">
+        <tr>
+            <td style="padding: 10px 10px 10px 10px" width="33.33%">
+                <h4 style="text-align: left;">SYJ Store</h4><br>
+                <p style="text-align: justify;">In our eyes, there's no reason why you can't claim your look with the perfect glasses.We took the best of vintage and redesigned it into new frames, that are stylish, current and modern.</p>
+            </td>
+            <td style="padding: 10px 10px 10px 10px" width="33.33%">
+                <h4 style="text-align: left;">Contact Info</h4><br>
+                <p style="text-align: justify;">UiTM Cawangan Pahang Kampus,<br>27600 Raub District, Pahang</p>
+                <p style="text-align: justify;">Phone: 09-351 5557</p>
+                <p style="text-align: justify;">Email: admin@syjstore.com</p>
+                <a href="syjstore.com" style="text-align: justify;">Web: syjstore.com</p>
+            </td>
+            <td style="padding: 10px 10px 10px 10px" width="33.33%">
+                <h4 style="text-align: left;">Our Maps</h4><br>
+                <iframe style="text-align: justify;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.208635743939!2d101.85972259999998!3d3.764721199999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cbf0e9930885d7%3A0xb4fafd0786597e13!2sUiTM%20Raub!5e0!3m2!1sen!2smy!4v1571588893622!5m2!1sen!2smy" width="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </td>
+        </tr>
+    </table>
+
+  <!--Copyright-->
+  <table class="copyright">
+        <tr>
+                <td style="padding-left: 30px;" width="50%">
+                    <a href="https://www.facebook.com/nrlsyhmina"><img src="src/facebook.png" width="30px"></a>
+                    <a href="https://www.youtube.com/watch?v=s6Z-8YexxRk"><img src="src/youtube.png" width="30px"></a>
+                </td>
+                <td style="padding-right: 30px;">
+                    <p style="text-align: right; color: black;">&copy; 2019 SYJ Store | All Right Reserved | Designed by Nurul Syahmina</p>
+                </td>
+            </tr>
+</table>
+<!--Cart-->
+<script>
+        // ************************************************
+    // Shopping Cart API
+    // ************************************************
+
+    var shoppingCart = (function() {
+      // =============================
+      // Private methods and propeties
+      // =============================
+      cart = [];
+      
+      // Constructor
+      function Item(name, price, count) {
+        this.name = name;
+        this.price = price;
+        this.count = count;
+      }
+      
+      // Save cart
+      function saveCart() {
+        sessionStorage.setItem('shoppingCart', JSON.stringify(cart));
+      }
+      
+        // Load cart
+      function loadCart() {
+        cart = JSON.parse(sessionStorage.getItem('shoppingCart'));
+      }
+      if (sessionStorage.getItem("shoppingCart") != null) {
+        loadCart();
+      }
+      
+
+      // =============================
+      // Public methods and propeties
+      // =============================
+      var obj = {};
+      
+      // Add to cart
+      obj.addItemToCart = function(name, price, count) {
+        for(var item in cart) {
+          if(cart[item].name === name) {
+            cart[item].count ++;
+            saveCart();
+            return;
+          }
+        }
+        var item = new Item(name, price, count);
+        cart.push(item);
+        saveCart();
+      }
+      // Set count from item
+      obj.setCountForItem = function(name, count) {
+        for(var i in cart) {
+          if (cart[i].name === name) {
+            cart[i].count = count;
+            break;
+          }
+        }
+      };
+      // Remove item from cart
+      obj.removeItemFromCart = function(name) {
+          for(var item in cart) {
+            if(cart[item].name === name) {
+              cart[item].count --;
+              if(cart[item].count === 0) {
+                cart.splice(item, 1);
+              }
+              break;
+            }
+        }
+        saveCart();
+      }
+
+      // Remove all items from cart
+      obj.removeItemFromCartAll = function(name) {
+        for(var item in cart) {
+          if(cart[item].name === name) {
+            cart.splice(item, 1);
+            break;
+          }
+        }
+        saveCart();
+      }
+
+      // Clear cart
+      obj.clearCart = function() {
+        cart = [];
+        saveCart();
+      }
+
+      // Count cart 
+      obj.totalCount = function() {
+        var totalCount = 0;
+        for(var item in cart) {
+          totalCount += cart[item].count;
+        }
+        return totalCount;
+      }
+
+      // Total cart
+      obj.totalCart = function() {
+        var totalCart = 0;
+        for(var item in cart) {
+          totalCart += cart[item].price * cart[item].count;
+        }
+        return Number(totalCart.toFixed(2));
+      }
+
+      // List cart
+      obj.listCart = function() {
+        var cartCopy = [];
+        for(i in cart) {
+          item = cart[i];
+          itemCopy = {};
+          for(p in item) {
+            itemCopy[p] = item[p];
+
+          }
+          itemCopy.total = Number(item.price * item.count).toFixed(2);
+          cartCopy.push(itemCopy)
+        }
+        return cartCopy;
+      }
+
+      // cart : Array
+      // Item : Object/Class
+      // addItemToCart : Function
+      // removeItemFromCart : Function
+      // removeItemFromCartAll : Function
+      // clearCart : Function
+      // countCart : Function
+      // totalCart : Function
+      // listCart : Function
+      // saveCart : Function
+      // loadCart : Function
+      return obj;
+    })();
+
+
+    // *****************************************
+    // Triggers / Events
+    // ***************************************** 
+    // Add item
+    $('.add-to-cart').click(function(event) {
+      event.preventDefault();
+      var name = $(this).data('name');
+      var price = Number($(this).data('price'));
+      shoppingCart.addItemToCart(name, price, 1);
+      displayCart();
+    });
+
+    // Clear items
+    $('.clear-cart').click(function() {
+      shoppingCart.clearCart();
+      displayCart();
+    });
+
+
+    function displayCart() {
+      var cartArray = shoppingCart.listCart();
+      var output = "";
+      for(var i in cartArray) {
+        output += "<tr>"
+          + "<td>" + cartArray[i].name + "</td>" 
+          + "<td>(" + cartArray[i].price + ")</td>"
+          + "<td><div class='input-group'><button class='minus-item input-group-addon btn btn-primary' data-name=" + cartArray[i].name + ">-</button>"
+          + "<input type='number' class='item-count form-control' data-name='" + cartArray[i].name + "' value='" + cartArray[i].count + "'>"
+          + "<button class='plus-item btn btn-primary input-group-addon' data-name=" + cartArray[i].name + ">+</button></div></td>"
+          + "<td><button class='delete-item btn btn-danger' data-name=" + cartArray[i].name + ">X</button></td>"
+          + " = " 
+          + "<td>" + cartArray[i].total + "</td>" 
+          +  "</tr>";
+      }
+      $('.show-cart').html(output);
+      $('.total-cart').html(shoppingCart.totalCart());
+      $('.total-count').html(shoppingCart.totalCount());
+    }
+
+    // Delete item button
+
+    $('.show-cart').on("click", ".delete-item", function(event) {
+      var name = $(this).data('name')
+      shoppingCart.removeItemFromCartAll(name);
+      displayCart();
+    })
+
+
+    // -1
+    $('.show-cart').on("click", ".minus-item", function(event) {
+      var name = $(this).data('name')
+      shoppingCart.removeItemFromCart(name);
+      displayCart();
+    })
+    // +1
+    $('.show-cart').on("click", ".plus-item", function(event) {
+      var name = $(this).data('name')
+      shoppingCart.addItemToCart(name);
+      displayCart();
+    })
+
+    // Item count input
+    $('.show-cart').on("change", ".item-count", function(event) {
+       var name = $(this).data('name');
+       var count = Number($(this).val());
+      shoppingCart.setCountForItem(name, count);
+      displayCart();
+    });
+
+    displayCart();
+    function addToCart()
+    {
+        alert("Item is add to cart");
+    }
+</script>
+    </body>
+</html>

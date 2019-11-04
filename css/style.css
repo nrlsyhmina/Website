@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+    max-width: auto;
+    height: auto;
+}
+
+#header {
+    /*background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) , url(https://cdn.pixabay.com/photo/2019/10/01/12/24/path-4518094__340.jpg);*/
+    width: 100%;
+    height: 8vh;
+    background-color: #ecc717;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+}
+
+#header img:hover {
+    transform: scale(1.5);
+    transition: .2s;
+    cursor: pointer;
+}
+
+ul {
+    float: right;
+    margin-top: auto;
+    list-style-type: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+
+ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+.slider {
+    width: 100%;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+.slider-image { 
+    display: none;
+}
+
+.icon img:hover {
+    transform: scale(1.5);
+    transition: .2s;
+    cursor: pointer;
+}
+
+.hoverProduct {
+    border-collapse: collapse;
+    width: 100%;
+   
+}
+
+.hoverProduct td {
+    padding: 7px;
+    border: #4dbdc6 1px transparent;
+}
+
+.hoverProduct tr {
+    background-color: whitesmoke;
+}
+
+.hoverProduct td:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+
+.button-yellow {
+    background-color: #ecc717;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button-yellow:hover {
+    background-color: whitesmoke;
+    color: black; 
+    border: 2px #ecc717 solid;
+}
+
+.button-white {
+    background-color: white;
+    border: none;
+    color: #ecc717;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button-white:hover {
+    background-color: #ecc717;
+    color: black; 
+    border: 2px white solid;
+}
+
+
+.sunglassesProduct {
+    border-collapse: collapse;
+    margin: auto;
+    width: 100%;
+    padding: 30px 30px 50px 80px;
+}
+
+.sunglassesProduct td {
+    padding: 7px;
+    border: #4dbdc6 1px transparent;
+}
+
+.sunglassesProduct tr {
+    background-color: #ecc717;
+}
+
+.sunglassesProduct img:hover {
+    transform: scale(1.5);
+    transition: .2s;
+    cursor: pointer;
+}
+
+.aboutus {
+    border-collapse: collapse;
+    margin: auto;
+    width: 100%;
+    
+}
+
+.aboutus tr {
+    background-color: whitesmoke;
+}
+
+.aboutus td {
+    padding: 7px;
+    border: #4dbdc6 1px transparent;
+}
+
+.footer {
+    width: 100%;
+    background-color: #ecc717;
+}
+
+.inputAll {
+    width: 550px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.checkout {
+    width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.footer {
+    background-color: #ecc717;
+    width: 100%;
+}
+
+.copyright {
+    background-color: #ecc717;
+    width: 100%;
+}
+
+.copyright img:hover {
+    transform: scale(1.5);
+    transition: .2s;
+    cursor: pointer;
+}
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: auto;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    font-family: arial;
+    justify-content: center;
+  
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #ecc717;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card img:hover {
+    transform: scale(1.5);
+    transition: .2s;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+}
+
+
+
